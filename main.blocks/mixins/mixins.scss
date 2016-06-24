@@ -1,0 +1,17 @@
+@mixin foodColor($color){
+    .food{
+        &__top{
+            border-color: $color;
+            &:before{
+                border-right: 23px solid $color;
+                border-bottom: 23px solid $color;
+            }
+        }
+        &__in{
+            border-color: $color;
+        }
+        &__mass{
+            background: $color;
+        }
+    }
+}

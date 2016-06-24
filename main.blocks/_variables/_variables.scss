@@ -2,10 +2,14 @@ $fontTrebuchetMS: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucid
 $fontExoThin: "Exo 2.0 Thin", Tahoma, sans-serif;
 
 $colorTitle: #fff;
+
 $colorFoodBg: #f2f2f2;
 $colorFoodBorder: #1698d9;
-
 $colorFoodDesc: #666666;
 $colorFoodName: #000;
 $colorFoodConsist: #000;
 $colorFoodSize: #666666;
+$colorFoodMass: $colorFoodBorder;
+
+$colorFoodBorderHover: #2ea8e6;
+$colorFoodMassHover: $colorFoodBorderHover;

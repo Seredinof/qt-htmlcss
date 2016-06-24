@@ -57,6 +57,7 @@
         border-top: none;
         border-radius: 0 0 12px 12px;
         background: $colorFoodBg url("food-in-bg.png") no-repeat 0 100%;
+        position: relative;
     }
     &__content{
         position: relative;
@@ -79,5 +80,26 @@
     &__size{
         font: 400 14px/16px $fontTrebuchetMS;
         color: $colorFoodSize;
+    }
+    &__mass{
+        position: absolute;
+        width: 81px;
+        height: 81px;
+        border-radius: 100%;
+        background: $colorFoodMass;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 15px;
+        right: 15px;
+        font: 400 21px $fontTrebuchetMS;
+        &-number{
+            font: 400 42px/1 $fontTrebuchetMS;
+        }
+    }
+
+    &:hover{
+        @include foodColor($colorFoodBorderHover);
     }
 }

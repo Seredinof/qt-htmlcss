@@ -91,6 +91,7 @@ html {
   border-top: none;
   border-radius: 0 0 12px 12px;
   background: #f2f2f2 url("../images/food-in-bg.png") no-repeat 0 100%;
+  position: relative;
 }
 
 .food__content {
@@ -118,4 +119,46 @@ html {
 .food__size {
   font: 400 14px/16px "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   color: #666666;
+}
+
+.food__mass {
+  position: absolute;
+  width: 81px;
+  height: 81px;
+  border-radius: 100%;
+  background: #1698d9;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 15px;
+  right: 15px;
+  font: 400 21px "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.food__mass-number {
+  font: 400 42px/1 "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.food:hover .food__top {
+  border-color: #2ea8e6;
+}
+
+.food:hover .food__top:before {
+  border-right: 23px solid #2ea8e6;
+  border-bottom: 23px solid #2ea8e6;
+}
+
+.food:hover .food__in {
+  border-color: #2ea8e6;
+}
+
+.food:hover .food__mass {
+  background: #2ea8e6;
 }
