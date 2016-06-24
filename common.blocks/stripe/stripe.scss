@@ -1,0 +1,10 @@
+.stripe{
+    @include clearfix;
+    &__in{
+        @include clearfix;
+        margin: 0 auto;
+        max-width: $container-large-desktop;
+        padding: 0 $grid-gutter-width/2;
+        box-sizing: border-box;
+    }
+}

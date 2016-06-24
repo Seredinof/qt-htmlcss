@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        title Котята, Нямушка
+        script(type='text/javascript').
+            function loadFont(t,e,n){function a(){if(!window.FontFace)return!1;var t=new FontFace("t",'url("data:application/font-woff2,") format("woff2")',{});return t.load(),"loading"===t.status}var o=navigator.userAgent,r=!window.addEventListener||o.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!o.match(/Chrome/);if(!r){var i={};try{i=localStorage||{}}catch(s){}var d="x-font-"+t,c=d+"url",l=d+"css",u=i[c],f=i[l],p=document.createElement("style");if(p.rel="stylesheet",document.head.appendChild(p),!f||u!==e&&u!==n){var w=n&&a()?n:e,h=new XMLHttpRequest;h.open("GET",w),h.onload=function(){h.status>=200&&h.status<400&&(i[c]=w,i[l]=p.textContent=h.responseText)},h.send()}else p.textContent=f}}
+            loadFont('all', 'css/fonts-woff.css', 'css/fonts-woff2.css');
+
+        link(href='css/styles.css', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic-ext', rel='stylesheet')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    body.page
+        div.page__in
+            h1.heading Ты сегодня покормил кота?
+            div.food
+                div.food__top
+                div.food__in
+                    div.food__content
+                        div.food__desc Сказочное заморское яство
+                        div.food__name Нямушка
+                        div.food__consist с фуа-гра
+                        div.food__size <b>10</b> порций<br/>мышь в подарок
+
+
+        script(src='js/app.js')
