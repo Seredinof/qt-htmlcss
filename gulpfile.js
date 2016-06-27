@@ -37,7 +37,7 @@ gulp.task('server', function(){
         server: './'
     });
 
-    gulp.watch([nameProject+'.bundles/*.jade'], ['html']);
+    gulp.watch([nameProject+'.bundles/*.jade', nameProject+'.blocks/**/*.jade'], ['html']);
 
     gulp.watch(params.levels.map(function(level){
         var cssGlob = level + '/**/*.scss';

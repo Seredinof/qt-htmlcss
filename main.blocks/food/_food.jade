@@ -1,0 +1,22 @@
+mixin food(id, consist, size, massNumber, descMore)
+    div.food
+        input(id=id, hidden='hidden', type='checkbox').food__control
+        label(for=id).food__wrapper
+            div.food__top
+            div.food__in
+                div.food__cat
+                div.food__content
+                    div.food__desc Сказочное заморское яство
+                    div.food__desc.food__desc_selected Котэ не одобряет?
+                    div.food__name Нямушка
+                    div.food__consist= consist
+                    div.food__size= size
+                div.food__mass
+                    div.food__mass-in
+                        div.food__mass-number= massNumber
+                        | кг
+            div.food__call Чего сидишь? Порадуй котэ,
+                label(for=id).food__action купи
+                | .
+            div.food__desc-more.food__desc-more_selected= descMore
+            div.food__desc-more.food__desc-more_disabled Печалька, с фуа-гра закончился.

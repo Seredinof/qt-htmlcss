@@ -1,3 +1,4 @@
+include _mixins.jade
 doctype html
 html(lang="en")
     head
@@ -12,18 +13,77 @@ html(lang="en")
     body.page
         div.page__in
             h1.heading Ты сегодня покормил кота?
-            div.food
-                div.food__top
-                div.food__in
-                    div.food__content
-                        div.food__desc Сказочное заморское яство
-                        div.food__name Нямушка
-                        div.food__consist с фуа-гра
-                        div.food__size <b>10</b> порций<br/>мышь в подарок
-                    div.food__mass
-                        div.food__mass-in
-                            div.food__mass-number 0,5
-                            | кг
+            div.container-fluid
+                div.flex-row.center-xxs
+                    div.col-xxs-12.col-sm-6.col-lg-4
+                        div.food
+                            input(id='f1', hidden='hidden', type='checkbox', tabindex='1').food__control
+                            label(for='f1').food__wrapper
+                                div.food__top
+                                div.food__in
+                                    div.food__cat
+                                    div.food__content
+                                        div.food__desc Сказочное заморское яство
+                                        div.food__desc.food__desc_selected Котэ не одобряет?
+                                        div.food__name Нямушка
+                                        div.food__consist с фуа-гра
+                                        div.food__size <b>10</b> порций<br/>мышь в подарок
+                                    div.food__mass
+                                        div.food__mass-in
+                                            div.food__mass-number 0,5
+                                            | кг
+                                div.food__call Чего сидишь? Порадуй котэ,
+                                    label(for='f1').food__action купи
+                                    |.
+                                div.food__desc-more.food__desc-more_selected Печень утки разварная с артишоками.
+                                div.food__desc-more.food__desc-more_disabled Печалька, с фуа-гра закончился.
+
+                    div.col-xxs-12.col-sm-6.col-lg-4
+                        div.food
+                            input(id='f2', hidden='hidden', type='checkbox', tabindex='2', checked).food__control
+                            label(for='f2').food__wrapper
+                                div.food__top
+                                div.food__in
+                                    div.food__cat
+                                    div.food__content
+                                        div.food__desc Сказочное заморское яство
+                                        div.food__desc.food__desc_selected Котэ не одобряет?
+                                        div.food__name Нямушка
+                                        div.food__consist с рыбой
+                                        div.food__size <b>40</b> порций<br/> <b>2</b> мыши в подарок
+                                    div.food__mass
+                                        div.food__mass-in
+                                            div.food__mass-number 2
+                                            | кг
+                                div.food__call Чего сидишь? Порадуй котэ,
+                                    label(for='f2').food__action купи
+                                    | .
+                                div.food__desc-more.food__desc-more_selected Головы щучьи с чесноком да свежайшая сёмгушка.
+                                div.food__desc-more.food__desc-more_disabled Печалька, с рыбой закончился.
+
+                    div.col-xxs-12.col-sm-6.col-lg-4
+                        div.food
+                            input(id='f3', hidden='hidden', type='checkbox', tabindex='3', disabled).food__control
+                            label(for='f3').food__wrapper
+                                div.food__top
+                                div.food__in
+                                    div.food__cat
+                                    div.food__content
+                                        div.food__desc Сказочное заморское яство
+                                        div.food__desc.food__desc_selected Котэ не одобряет?
+                                        div.food__name Нямушка
+                                        div.food__consist с курой
+                                        div.food__size <b>100</b> порций<br/> <b>5</b> мышей в подарок <br/> заказчик доволен
+                                    div.food__mass
+                                        div.food__mass-in
+                                            div.food__mass-number 5
+                                            | кг
+                                div.food__call Чего сидишь? Порадуй котэ,
+                                    label(for='f3').food__action купи
+                                    | .
+                                div.food__desc-more.food__desc-more_selected Филе из цыплят с трюфелями в бульоне.
+                                div.food__desc-more.food__desc-more_disabled Печалька, с курой закончился.
+
 
 
         script(src='js/app.js')

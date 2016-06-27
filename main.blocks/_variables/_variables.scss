@@ -5,11 +5,40 @@ $colorTitle: #fff;
 
 $colorFoodBg: #f2f2f2;
 $colorFoodBorder: #1698d9;
+
+$colorFoodBorderHover: #2ea8e6;
+$colorFoodMassHover: $colorFoodBorderHover;
+
+$colorFoodBorderSelected: #d91667;
+$colorFoodMassSelected: $colorFoodBorderSelected;
+
+$colorFoodBorderDisabled: #b3b3b3;
+$colorFoodMassDisabled: $colorFoodBorderDisabled;
+
 $colorFoodDesc: #666666;
 $colorFoodName: #000;
 $colorFoodConsist: #000;
 $colorFoodSize: #666666;
+
+$colorFoodDescDisabled: #b3b3b3;
+$colorFoodNameDisabled: #b3b3b3;
+$colorFoodConsistDisabled: #b3b3b3;
+$colorFoodSizeDisabled: #b3b3b3;
+
+$colorFoodDescSelected: $colorFoodBorderSelected;
+
 $colorFoodMass: $colorFoodBorder;
 
 $colorFoodBorderHover: #2ea8e6;
 $colorFoodMassHover: $colorFoodBorderHover;
+
+$colorFoodBorderSelected: #d91667;
+$colorFoodMassSelected: $colorFoodBorderSelected;
+
+$colorFoodBorderDisabled: #b3b3b3;
+$colorFoodMassDisabled: $colorFoodBorderDisabled;
+
+$colorFoodCall: #fff;
+$colorFoodAction: $colorFoodBorder;
+
+$colorFoodDescDisabledOutside: #ffff66;

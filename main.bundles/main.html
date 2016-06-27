@@ -14,18 +14,90 @@
   <body class="page">
     <div class="page__in">
       <h1 class="heading">Ты сегодня покормил кота?</h1>
-      <div class="food">
-        <div class="food__top"></div>
-        <div class="food__in">
-          <div class="food__content">
-            <div class="food__desc">Сказочное заморское яство</div>
-            <div class="food__name">Нямушка</div>
-            <div class="food__consist">с фуа-гра</div>
-            <div class="food__size"><b>10</b> порций<br/>мышь в подарок</div>
+      <div class="container-fluid">
+        <div class="flex-row center-xxs">
+          <div class="col-xxs-12 col-sm-6 col-lg-4">
+            <div class="food">
+              <input id="f1" hidden="hidden" type="checkbox" tabindex="1" class="food__control">
+              <label for="f1" class="food__wrapper">
+                <div class="food__top"></div>
+                <div class="food__in">
+                  <div class="food__cat"></div>
+                  <div class="food__content">
+                    <div class="food__desc">Сказочное заморское яство</div>
+                    <div class="food__desc food__desc_selected">Котэ не одобряет?</div>
+                    <div class="food__name">Нямушка</div>
+                    <div class="food__consist">с фуа-гра</div>
+                    <div class="food__size"><b>10</b> порций<br/>мышь в подарок</div>
+                  </div>
+                  <div class="food__mass">
+                    <div class="food__mass-in">
+                      <div class="food__mass-number">0,5</div>кг
+                    </div>
+                  </div>
+                </div>
+                <div class="food__call">Чего сидишь? Порадуй котэ,
+                  <label for="f1" class="food__action">купи</label>.
+                </div>
+                <div class="food__desc-more food__desc-more_selected">Печень утки разварная с артишоками.</div>
+                <div class="food__desc-more food__desc-more_disabled">Печалька, с фуа-гра закончился.</div>
+              </label>
+            </div>
           </div>
-          <div class="food__mass">
-            <div class="food__mass-in">
-              <div class="food__mass-number">0,5</div>кг
+          <div class="col-xxs-12 col-sm-6 col-lg-4">
+            <div class="food">
+              <input id="f2" hidden="hidden" type="checkbox" tabindex="2" checked class="food__control">
+              <label for="f2" class="food__wrapper">
+                <div class="food__top"></div>
+                <div class="food__in">
+                  <div class="food__cat"></div>
+                  <div class="food__content">
+                    <div class="food__desc">Сказочное заморское яство</div>
+                    <div class="food__desc food__desc_selected">Котэ не одобряет?</div>
+                    <div class="food__name">Нямушка</div>
+                    <div class="food__consist">с рыбой</div>
+                    <div class="food__size"><b>40</b> порций<br/> <b>2</b> мыши в подарок</div>
+                  </div>
+                  <div class="food__mass">
+                    <div class="food__mass-in">
+                      <div class="food__mass-number">2</div>кг
+                    </div>
+                  </div>
+                </div>
+                <div class="food__call">Чего сидишь? Порадуй котэ,
+                  <label for="f2" class="food__action">купи</label>.
+                </div>
+                <div class="food__desc-more food__desc-more_selected">Головы щучьи с чесноком да свежайшая сёмгушка.</div>
+                <div class="food__desc-more food__desc-more_disabled">Печалька, с рыбой закончился.</div>
+              </label>
+            </div>
+          </div>
+          <div class="col-xxs-12 col-sm-6 col-lg-4">
+            <div class="food">
+              <input id="f3" hidden="hidden" type="checkbox" tabindex="3" disabled class="food__control">
+              <label for="f3" class="food__wrapper">
+                <div class="food__top"></div>
+                <div class="food__in">
+                  <div class="food__cat"></div>
+                  <div class="food__content">
+                    <div class="food__desc">Сказочное заморское яство</div>
+                    <div class="food__desc food__desc_selected">Котэ не одобряет?</div>
+                    <div class="food__name">Нямушка</div>
+                    <div class="food__consist">с курой</div>
+                    <div class="food__size"><b>100</b> порций<br/> <b>5</b> мышей в подарок <br/> заказчик доволен</div>
+                  </div>
+                  <div class="food__mass">
+                    <div class="food__mass-in">
+                      <div class="food__mass-number">5</div>кг
+                    </div>
+                  </div>
+                </div>
+                <div class="food__call">Чего сидишь? Порадуй котэ,
+                  <label for="f3" class="food__action">купи</label>.
+                </div>
+                <div class="food__desc-more food__desc-more_selected">Филе из цыплят с трюфелями в бульоне.</div>
+                <div class="food__desc-more food__desc-more_disabled">Печалька, с курой закончился.</div>
+              </label>
             </div>
           </div>
         </div>

@@ -3,11 +3,11 @@
     padding: 0;
     background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%),
                 url("page-bg-pattern.jpg") repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     &__in{
         color: #fff;
+        max-width: 1280px;
+        box-sizing: border-box;
     }
 }
 html, body{
@@ -15,4 +15,12 @@ html, body{
 }
 html{
     position: relative;
+}
+
+@media (min-width: $screen-lg) {
+    .page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
