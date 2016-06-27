@@ -372,7 +372,17 @@
         order: 1;
     }
 }
+
+$grid-gutter-width: 80px;
+
 @media (min-width: $screen-sm-min) {
+
+
+    .container-fluid{
+        padding-left: ($grid-gutter-width / 2);
+        padding-right: ($grid-gutter-width / 2);
+    }
+
     .col-sm,
     .col-sm-1,
     .col-sm-2,
@@ -557,6 +567,8 @@
         order: 1;
     }
 }
+
+
 
 @media (min-width: $screen-md-min) {
     .col-md,

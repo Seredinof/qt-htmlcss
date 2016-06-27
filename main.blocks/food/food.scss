@@ -1,5 +1,6 @@
 .food{
-    min-width: 320px;
+    display: block;
+    width: 100%;
     margin: 0 0 40px;
     text-align: left;
     &__wrapper{
@@ -205,5 +206,11 @@
         .food__desc-more_disabled {
             display: block;
         }
+    }
+}
+
+@media (min-width: $screen-xs) {
+    .food{
+        min-width: 320px;
     }
 }

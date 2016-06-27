@@ -1,6 +1,6 @@
 .container-fluid {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .flex-row {
@@ -17,8 +17,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .col-xxs,
@@ -50,8 +50,8 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-xxs {
@@ -274,8 +274,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .col-xs {
@@ -470,6 +470,11 @@
 }
 
 @media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -1413,7 +1418,8 @@ html {
 }
 
 .food {
-  min-width: 320px;
+  display: block;
+  width: 100%;
   margin: 0 0 40px;
   text-align: left;
 }
@@ -1692,4 +1698,10 @@ html {
 
 .food__control:disabled + .food__wrapper .food__desc-more_disabled {
   display: block;
+}
+
+@media (min-width: 480px) {
+  .food {
+    min-width: 320px;
+  }
 }
