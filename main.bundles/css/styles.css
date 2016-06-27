@@ -1427,6 +1427,7 @@ html {
 .food__wrapper {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 .food__wrapper:hover .food__top {
@@ -1515,7 +1516,8 @@ html {
 .food__content {
   position: relative;
   top: -46px;
-  padding: 20px 10px 0 46px;
+  padding: 20px 10px 260px 46px;
+  min-height: 170px;
 }
 
 .food__desc {
@@ -1563,6 +1565,7 @@ html {
   bottom: 15px;
   right: 15px;
   font: 400 21px "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  overflow: hidden;
 }
 
 .food__mass-number {

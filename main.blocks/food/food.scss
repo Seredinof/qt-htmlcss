@@ -6,6 +6,7 @@
     &__wrapper{
         display: block;
         position: relative;
+        overflow: hidden;
         &:hover{
             @include foodColor($colorFoodBorderHover);
         }
@@ -79,7 +80,8 @@
     &__content{
         position: relative;
         top: -46px;
-        padding: 20px 10px 0 46px;
+        padding: 20px 10px 260px 46px;
+        min-height: 170px;
     }
     &__desc{
         font: 400 16px $fontTrebuchetMS;
@@ -115,6 +117,7 @@
         bottom: 15px;
         right: 15px;
         font: 400 21px $fontTrebuchetMS;
+        overflow: hidden;
         &-number{
             font: 400 42px/1 $fontTrebuchetMS;
         }
